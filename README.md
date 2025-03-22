@@ -33,9 +33,8 @@ Step 2:Creation of Dasboard using PowerBI Desktop
 •Load dataset into PowerBi Desktop using GeData
 •Data Cleaning and appying data trasformations
 •Created Measure using DAX Funtions for complex calculations
-•Crearion of Visual in the Report as per bussiness rules.
+•Creation of Visual in the Report as per bussiness rules.
 
-![Alt text](D:\PowerBI_Dataset\Credit_Card_Analysis_Project\Cust.png)
 
 
 
