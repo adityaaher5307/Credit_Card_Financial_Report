@@ -9,7 +9,7 @@ key performance metrics and trends.
 on dashboard findings to support decision-making 
 processes.
 
-** Project Insights- Week 53 (31st Dec)**
+**Project Insights- Week 53 (31st Dec)**
  WoW change: 
 • Revenue increased by 28.8%, 
 • Total Transaction Amt & Count increased by 25.9% & 3.2%
@@ -30,34 +30,11 @@ Step 1:Import data to PostgresSQL database
  • Import csv file into PostgresSQL
 
 Step 2:Creation of Dasboard using PowerBI Desktop
+•Load dataset into PowerBi Desktop using GeData
+•Data Cleaning and appying data trasformations
+•Created Measure using DAX Funtions for complex calculations
+•Crearion of Visual in the Report as per bussiness rules.
 
-DAX Queries
- AgeGroup = SWITCH(
- TRUE(),
- 'public cust_detail'[customer_age] < 30, "20-30",
- 'public cust_detail'[customer_age] >= 30 && 'public cust_detail'[customer_age] < 40, "30-40",
- 'public cust_detail'[customer_age] >= 40 && 'public cust_detail'[customer_age] < 50, "40-50",
- 'public cust_detail'[customer_age] >= 50 && 'public cust_detail'[customer_age] < 60, "50-60",
- 'public cust_detail'[customer_age] >= 60, "60+",
- "unknown"
- )
- IncomeGroup = SWITCH(
- TRUE(),
- 'public cust_detail'[income] < 35000, "Low",
- 'public cust_detail'[income] >= 35000 && 'public cust_detail'[income] <70000, "Med",
- 'public cust_detail'[income] >= 70000, "High",
- "unknown"
- )
- week_num2 = WEEKNUM('public cc_detail'[week_start_date])
- Revenue = 'public cc_detail'[annual_fees] + 'public cc_detail'[total_trans_amt] + 'public cc_detail'[interest_earned]
- Current_week_Reveneue = CALCULATE(
- SUM('public cc_detail'[Revenue]),
- FILTER(
- ALL('public cc_detail'),
- 'public cc_detail'[week_num2] = MAX('public cc_detail'[week_num2]))) 
-Previous_week_Reveneue = CALCULATE(
- SUM('public cc_detail'[Revenue]),
- FILTER(
- ALL('public cc_detail'),
- 'public cc_detail'[week_num2] = MAX('public cc_detail'[week_num2])-1))
+
+
 
