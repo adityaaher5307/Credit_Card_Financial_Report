@@ -1,40 +1,78 @@
-# Credit_Card_Financial_Report
-**Credit Card Financial Dashboard using Power BI:**
- • Developed an interactive dashboard using 
-transaction and customer data from a SQL database, 
-to provide real-time insights. 
-• Streamlined data processing & analysis to monitor 
-key performance metrics and trends.
- • Shared actionable insights with stakeholders based 
-on dashboard findings to support decision-making 
-processes.
+# Credit Card Financial Report - Power BI Dashboard
 
-**Project Insights- Week 53 (31st Dec)**
- WoW change: 
-• Revenue increased by 28.8%, 
-• Total Transaction Amt & Count increased by 25.9% & 3.2%
- Overview YTD:
- • Overall revenue is 57M
- • Total interest is 8M
- • Total transaction amount is 46M
- • Male customers are contributing more in revenue 31M, female 26M
- • Blue & Silver credit card are contributing to 93% of overall transactions
- • TX, NY & CA is contributing to 68%
- • Overall Activation rate is 57.5%
- • Overall Delinquent rate is 6.06%
+## Overview
 
-**Project Steps**
-Step 1:Import data to PostgresSQL database 
- • Prepare csv file 
- • Create tables in PostgresSQL
- • Import csv file into PostgresSQL
+This project presents an interactive Power BI dashboard designed to analyze credit card financial data. Utilizing transaction and customer data from a SQL database, the dashboard provides real-time insights into key performance metrics and trends, enabling data-driven decision-making.
 
-Step 2:Creation of Dasboard using PowerBI Desktop
-•Load dataset into PowerBi Desktop using GeData
-•Data Cleaning and appying data trasformations
-•Created Measure using DAX Funtions for complex calculations
-•Creation of Visual in the Report as per bussiness rules.
+## Features
+
+-   **Real-time Insights:** Interactive dashboard for monitoring transaction and customer data.
+-   **Key Performance Metrics:** Tracking revenue, transaction amounts, counts, interest, activation rates, and delinquency rates.
+-   **Trend Analysis:** Visualizing week-over-week (WoW) and year-to-date (YTD) trends.
+-   **Customer Segmentation:** Analyzing revenue contributions by gender.
+-   **Card Type Analysis:** Identifying the contribution of different credit card types to overall transactions.
+-   **Geographic Analysis:** Visualizing revenue contributions by state.
+-   **Actionable Insights:** Sharing findings with stakeholders to support strategic decision-making.
+
+## Project Insights
+
+**Week 53 (31st Dec) WoW Change:**
+
+-   Revenue increased by 28.8%.
+-   Total Transaction Amount increased by 25.9%.
+-   Total Transaction Count increased by 3.2%.
+
+**Year-to-Date (YTD) Overview:**
+
+-   Overall Revenue: $57M
+-   Total Interest: $8M
+-   Total Transaction Amount: $46M
+-   Revenue Contribution by Gender:
+    -   Male: $31M
+    -   Female: $26M
+-   Credit Card Type Contribution:
+    -   Blue & Silver: 93% of overall transactions.
+-   Geographic Contribution:
+    -   TX, NY, CA: 68% of overall transactions.
+-   Overall Activation Rate: 57.5%
+-   Overall Delinquent Rate: 6.06%
+
+## Project Steps
+
+**Step 1: Import Data to PostgreSQL Database**
+
+-   Prepare CSV data files.
+-   Create tables in PostgreSQL.
+-   Import CSV data into PostgreSQL tables.
+
+**Step 2: Creation of Dashboard using Power BI Desktop**
+
+-   Load dataset into Power BI Desktop using "Get Data" from PostgreSQL.
+-   Perform data cleaning and apply data transformations using Power Query Editor.
+-   Create measures using DAX functions for complex calculations.
+-   Design and create visualizations in the report based on business rules.
+
+## Dependencies
+
+-   Power BI Desktop
+-   PostgreSQL Database
+-   CSV data files
+
+## Usage
+
+1.  **Data Acquisition:** Ensure the PostgreSQL database is populated with the required credit card transaction and customer data.
+2.  **Power BI Setup:** Open the provided PBIX file in Power BI Desktop or connect your own Power BI report to the PostgreSQL database.
+3.  **Interactive Exploration:** Use the dashboard's interactive features, such as slicers and filters, to explore the data and gain insights.
+4.  **Analysis:** Analyze the visualizations to understand trends and patterns in credit card financial data.
+5.  **Reporting:** Share the insights and findings with stakeholders to support decision-making.
+
+# Credit Card Customer Report
+![Cust](https://github.com/user-attachments/assets/9cff2626-f48a-4b74-9f86-13f17ba10a1e)
+
+# Credit Card Transaction Report
+![cust2](https://github.com/user-attachments/assets/ee5dfa64-3869-45b3-8119-9758b7c15b82)
 
 
 
 
+  
